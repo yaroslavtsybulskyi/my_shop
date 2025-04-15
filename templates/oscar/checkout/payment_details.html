@@ -1,0 +1,25 @@
+{% extends "oscar/checkout/checkout.html" %}
+{% load i18n %}
+
+{% block title %}
+    {% trans "Payment details" %} | {{ block.super }}
+{% endblock %}
+
+{% block checkout_nav %}
+    {% include 'oscar/checkout/nav.html' with step=3 %}
+{% endblock %}
+
+{% block checkout_title %}
+    <h1 class="page-title">{% trans "Review and Pay" %}</h1>
+{% endblock %}
+
+{% block payment_details %}
+    {% block payment_details_content %}
+    <div class="box" style="padding: 2rem; text-align: center;">
+        <p>{% trans "To complete your purchase, please click the PayPal button below." %}</p>
+        <a href="{% url 'paypal-redirect' %}">
+            <img src="https://www.paypal.com/en_US/i/btn/btn_xpressCheckout.gif" alt="Pay with PayPal">
+        </a>
+    </div>
+    {% endblock %}
+{% endblock %}

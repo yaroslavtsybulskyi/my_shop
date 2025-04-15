@@ -1,0 +1,66 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# C extensions
+*.so
+
+# Django stuff:
+*.log
+*.pot
+*.pyc
+db.sqlite3
+db.sqlite3-journal
+*.sqlite3
+*.sqlite3-journal
+media/
+staticfiles/
+
+# Django migrations
+*/migrations/
+*/migrations/*.py
+*/migrations/*.pyc
+
+# Oscar-specific
+*.egg-info/
+*.eggs/
+*.coverage
+.coverage.*
+.tox/
+docs/_build/
+build/
+dist/
+*.mo
+
+# Virtualenv
+env/
+venv/
+ENV/
+VENV/
+env.bak/
+venv.bak/
+.idea/
+.vscode/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Pytest / coverage
+htmlcov/
+.coverage
+.cache
+.pytest_cache/
+
+# dotenv
+.env
+.env.*
+
+# VS Code settings
+.vscode/
+
+# PythonAnywhere or deployment
+local_settings.py
+
+whoosh_index/
